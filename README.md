@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Lung Cancer Detection Web App
 
 This is a web application built with Django and Python that utilizes a Mobile Net model based of a pre-trained InceptionV3 model to predict whether a chest CT scan is normal or shows signs of a particular type of lung cancer. The model was built by Arjit Gupta, whose Kaggle profile can be found [here](https://www.kaggle.com/arjitgupta00).
@@ -36,3 +37,7 @@ To make a prediction, upload a chest CT scan in JPEG or PNG format by clicking t
 # License
 
 This project is licensed under the MIT License. Please see the [LICENSE](LICENSE.txt) file for more details.
+=======
+# Lung_Cancer_App
+This is a Django project which will predict lung cancer based on provided CT scans and symptoms of the patients.
+>>>>>>> 58176b3d93c5a17a9f4c21698ae950fc9fd13369
