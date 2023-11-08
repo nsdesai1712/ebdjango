@@ -4,8 +4,10 @@
 # tensorflow==2.12.0
 # aiohttp==3.8.4
 
-Django
-numpy
-Pillow
-tensorflow
+Django~=4.2.7
+numpy~=1.26.1
+Pillow~=10.1.0
+tensorflow~=2.14.0
 aiohttp
+
+keras~=2.14.0

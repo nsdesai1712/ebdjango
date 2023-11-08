@@ -2,16 +2,16 @@ import numpy as np
 from django.shortcuts import render
 from django.core.files.storage import default_storage
 from django.core.files.base import ContentFile
-from keras.models import load_model
+import keras.models
 from keras.applications.mobilenet_v2 import preprocess_input
-from tensorflow.keras.preprocessing import image # type: ignore
+from tensorflow.keras.preprocessing import image# type: ignore
 from PIL import Image
 from .forms import ImageUploadForm
 import imghdr
 
 
-ct_scan_model = load_model("mobnet_n_v_c.h5")
-cancer_model = load_model("mobnet_model_best.hdf5")
+ct_scan_model = keras.models.load_model("mobnet_n_v_c.h5")
+cancer_model = keras.models.load_model("mobnet_model_best.hdf5")
 
 
 def process_image(image, target_size):
@@ -47,7 +47,7 @@ def predict_cancer(image_path):
 
 
 def home(request):
-    return render(request, 'home.html')
+    return render(request, 'index.html')
 
 
 def home_async(request):
