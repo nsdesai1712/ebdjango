@@ -1,8 +1,9 @@
 from django.urls import path
-from .views import home, home_async
+from .views import *
 
 urlpatterns = [
     path('', home, name='home'),
-    path('home_async', home_async, name='home_async'),
+    path('detection/home_async', home_async, name='home_async'),
+    path('detection/predict_syms', predict_lung_cancer_sym, name='predict_syms'),
 ]
 
