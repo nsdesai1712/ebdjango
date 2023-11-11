@@ -79,8 +79,7 @@ def predict_lung_cancer_sym(request):
             # Render a template with the results
             return render(request, 'sym_result_template.html', {
                 'result_message': result_message,
-                'class_0_probability': class_probabilities,
-                'class_1_probability': class_probabilities,
+                'class_probability': class_probabilities,
             })
 
     else:

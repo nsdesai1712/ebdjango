@@ -1,22 +1,21 @@
-/**
-* Template Name: Maundy
-* Updated: Sep 18 2023 with Bootstrap v5.3.2
-* Template URL: https://bootstrapmade.com/maundy-free-coming-soon-bootstrap-theme/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #fff;
-  background: url("../img/bg.jpg") top center no-repeat;
-  background-size: cover;
+  color: white; /* Set text color to darkorchid */
+  background-color: blanchedalmond; /* Set background color to white */
   position: relative;
 }
 
+a {
+  color: darkorchid; /* Set link color to darkorchid */
+  text-decoration: none;
+  transition: color 0.3s; /* Add smooth transition on color change */
+}
+
+a:hover {
+  color: darkmagenta; /* Change link color to darkmagenta on hover */
+}
+
+/* Rest of your existing CSS remains unchanged */
 body::before {
   content: "";
   position: absolute;
@@ -25,22 +24,6 @@ body::before {
   top: 0;
   bottom: 0;
   background: rgba(49, 71, 89, 0.6);
-}
-
-@media (min-width: 1024px) {
-  body {
-    background-attachment: fixed;
-  }
-}
-
-a {
-  color: #24b7a4;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #36d8c3;
-  text-decoration: none;
 }
 
 h1,
@@ -66,7 +49,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #24b7a4;
+  background: darkorchid;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -80,7 +63,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #2ed6c0;
+  background: darkmagenta;
   color: #fff;
 }
 
@@ -271,15 +254,15 @@ h6 {
 }
 
 #header .social-links a:hover {
-  background: #24b7a4;
-  border-color: #24b7a4;
+  background: darkmagenta;
+  border-color: darkmagenta;
 }
 
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
 /**
-* Desktop Navigation 
+* Desktop Navigation
 */
 .navbar {
   padding: 0;
@@ -322,12 +305,12 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #24b7a4;
+  color: darkmagenta;
 }
 
 .navbar .getstarted,
 .navbar .getstarted:focus {
-  background: #24b7a4;
+  background: darkmagenta;
   padding: 8px 20px;
   margin-left: 30px;
   border-radius: 4px;
@@ -337,7 +320,7 @@ h6 {
 .navbar .getstarted:hover,
 .navbar .getstarted:focus:hover {
   color: #fff;
-  background: #28ccb7;
+  background: darkmagenta;
 }
 
 .navbar .dropdown ul {
@@ -407,7 +390,7 @@ h6 {
 }
 
 /**
-* Mobile Navigation 
+* Mobile Navigation
 */
 .mobile-nav-toggle {
   color: #314759;
@@ -524,7 +507,7 @@ section {
 }
 
 .section-bg {
-  background-color: #d8f7f3;
+  background-color: white;
 }
 
 .section-title {
@@ -547,7 +530,7 @@ section {
   display: block;
   width: 50px;
   height: 2px;
-  background: #24b7a4;
+  background: white;
   bottom: 0;
   left: calc(50% - 25px);
 }
@@ -597,8 +580,8 @@ section {
 # Contact Us
 --------------------------------------------------------------*/
 .contact .info {
-  border-top: 3px solid #24b7a4;
-  border-bottom: 3px solid #24b7a4;
+  border-top: 3px solid darkorchid;
+  border-bottom: 3px solid darkorchid;
   padding: 30px;
   background: rgba(255, 255, 255, 0.06);
   width: 100%;
@@ -656,21 +639,21 @@ section {
 }
 
 .contact .info .social-links a:hover {
-  background: #24b7a4;
+  background: darkmagenta;
   color: #fff;
 }
 
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: #24b7a4;
+  background: darkmagenta;
   color: #fff;
 }
 
 .contact .php-email-form {
   width: 100%;
-  border-top: 3px solid #24b7a4;
-  border-bottom: 3px solid #24b7a4;
+  border-top: 3px solid darkorchid;
+  border-bottom: 3px solid darkorchid;
   padding: 30px;
   background: rgba(255, 255, 255, 0.06);
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
@@ -745,7 +728,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #24b7a4;
+  background: white;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -754,7 +737,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #36d8c3;
+  background: white;
 }
 
 @keyframes animate-loading {
