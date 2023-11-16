@@ -5,3 +5,8 @@ detection/templates/home_async2.html
 detection/templates/home2.html
 
 detection/templates/result2.html
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
