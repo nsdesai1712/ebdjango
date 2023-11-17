@@ -1,0 +1,22 @@
+branch-defaults:
+  main:
+    environment: predict-service-virtualenv-1
+    group_suffix: null
+environment-defaults:
+  django-venv:
+    branch: null
+    repository: null
+global:
+  application_name: predict-service-app-1
+  branch: null
+  default_ec2_keyname: team1key
+  default_platform: Python 3.11
+  default_region: us-east-2
+  include_git_submodules: true
+  instance_profile: null
+  platform_name: null
+  platform_version: null
+  profile: eb-cli
+  repository: null
+  sc: git
+  workspace_type: Application
