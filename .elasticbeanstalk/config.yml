@@ -1,16 +1,19 @@
 branch-defaults:
   main:
-    environment: predict-service-virtualenv-1
+    environment: predict-service-virtualenv
     group_suffix: null
 environment-defaults:
   django-venv:
     branch: null
     repository: null
+  predict-service-virtualenv:
+    branch: null
+    repository: null
 global:
-  application_name: predict-service-app-1
+  application_name: predict-service-app
   branch: null
   default_ec2_keyname: team1key
-  default_platform: Python 3.11
+  default_platform: Python 3.11 running on 64bit Amazon Linux 2023
   default_region: us-east-2
   include_git_submodules: true
   instance_profile: null
